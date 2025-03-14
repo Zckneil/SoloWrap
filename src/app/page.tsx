@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { 
   HandThumbUpIcon, 
   ShieldCheckIcon, 
   ClockIcon, 
-  BeakerIcon, 
   UserGroupIcon, 
   AcademicCapIcon,
   ArrowRightIcon,
@@ -239,7 +237,7 @@ export default function Home() {
               Designed for Everyone
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Whether you're a healthcare professional or a patient, SoloWrap provides the perfect solution for your wound care needs.
+              Whether you&apos;re a healthcare professional or a patient, SoloWrap provides the perfect solution for your wound care needs.
             </p>
           </div>
           
