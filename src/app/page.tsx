@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { 
   HandThumbUpIcon, 
@@ -143,17 +144,14 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow animate-slide-in-right">
-            <div className="relative mx-auto w-80 h-80 lg:w-[450px] lg:h-[450px] animate-float">
-              <div className="absolute w-full h-full rounded-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-                <div className="w-3/4 h-3/4 rounded-full bg-white shadow-lg flex items-center justify-center">
-                  <div className="relative w-2/3 h-2/3 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center text-white font-bold text-xl shadow-md">
-                    <span>SoloWrap</span>
-                    <div className="absolute -top-4 -right-4 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-xs font-bold px-2 py-1 rounded-full transform rotate-12 shadow-sm animate-pulse">
-                      New
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="relative mx-auto w-80 h-80 lg:w-[450px] lg:h-[450px] animate-float rounded-3xl overflow-hidden">
+              <Image
+                src="/images/SoloWrap.png"
+                alt="SoloWrap Medical Dressing Device"
+                fill
+                priority
+                className="object-contain rounded-3xl"
+              />
             </div>
           </div>
         </div>
